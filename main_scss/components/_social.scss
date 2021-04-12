@@ -1,0 +1,46 @@
+.join_text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    color: #FFFFFF;
+}
+
+.container_social {
+    width: 206px;
+    height: 80px;
+}
+
+
+.join_box:not(:last-child) {
+    margin-right: 10px;
+} 
+
+.link_social_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        background: var(--accent_color);
+        cursor: pointer;
+    }
+}
+
+
+.social_link_icon_footer {
+    width: 20px;
+    height: 20px;
+    fill: var(--first_color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}

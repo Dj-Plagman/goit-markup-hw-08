@@ -1,0 +1,34 @@
+body {
+    font-family: var(--main_fond);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    display: block;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--title_text);
+}
+
+.list {
+    list-style: none;
+    
+}
+
+.list_footer {
+    list-style: none;
+}
+
+.adress {
+    font-style: normal;
+}
+
+.mobile-menu__list {
+    list-style: none;
+}

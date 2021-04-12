@@ -1,0 +1,44 @@
+.div_footer {
+    display: flex;
+
+}
+
+.container_footer {
+    margin-right: 70px;
+
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--background_first);
+}
+
+.container_footer .logo {
+    margin-right: 0px;
+}
+
+.adress {
+    margin-top: 20px;
+}
+
+.list_footer {
+    align-items: center;
+    margin-left: auto;
+}
+
+.contact_footer:not(:first-child) {
+    margin-top: 7px;
+}
+
+.adress_link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--first_color);
+}
+.footer_color {
+    color: var(--footer_color);
+}

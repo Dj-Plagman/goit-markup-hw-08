@@ -1,0 +1,48 @@
+.direction {
+    padding-bottom: 94px;
+}
+
+.working {
+    padding-top: 90px;
+}
+
+.working_list {
+    margin-top: 50px;
+}
+
+.working__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title_text); 
+}
+
+.working__box:not(:last-child) {
+    margin-right: 30px;
+}
+
+.working__direction {
+    position: relative;
+}
+
+.working__text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+    font-family: var(--main_fond);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--first_color);
+    background-color: rgba(47, 48, 58, 0.8);
+}

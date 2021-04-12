@@ -1,0 +1,31 @@
+.photo {
+    position: relative;
+    overflow: hidden;
+}
+
+.overley_card {
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    height: 100%;
+    font-family: var(--main_fond);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    padding: 63px 24px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 250ms linear, opacity 250ms linear;
+
+    .linc_cards:hover &,
+    .linc_cards:focus & {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+
