@@ -15,7 +15,7 @@
     width: 1600px;
     background-color: #c4c4c4;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-     rgba(47, 48, 58, 0.4)), url(../img/overley/hero_img_backgraund.jpg);
+     rgba(47, 48, 58, 0.4)), url(../../img/desktop/hero/hero-img@1x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: auto;
@@ -56,6 +56,26 @@
     &:focus,
     &:hover {
     background: var(--button_accent)
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-hero {
+        width: 480px;
+        height: 400px;
+    }
+
+    .overley {
+        width: 100vw;
+        max-width: 480px;
+        background-color: #c4c4c4;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)), url(../../img/mobile/hero/hero-img@2x.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-left: auto;
+        margin-right: auto;
+        background-position: center;
     }
 }
 
