@@ -17,6 +17,11 @@
     height: 580px;
     background: var(--first_color);
     padding: 40px;
+
+    @media screen and (max-width: 468px) {
+        width: 450px;
+        height: 609px;
+    }
 }
 
 .svg_close {
