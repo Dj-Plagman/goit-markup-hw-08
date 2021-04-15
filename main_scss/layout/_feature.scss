@@ -17,25 +17,29 @@
 
     @media screen and (max-width: 768px) {
         margin-bottom: 30px;
+        margin-right: 0;
     }
 }
 
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
     .feature__list {
+        
         display: flex;
         flex-wrap: wrap;
         margin-top: 34px;
         justify-content: center;
     }
 }
+
 .feature__box {
     width: 270px;
 
     @media screen and (max-width: 768px) {
-        width: 450px;
+        max-width: 450px;
     }
     @media screen and (min-width: 768px) and (min-width: 1200px) {
-        width: 354px;
+        max-width: 354px;
         flex-basis: calc((100% / 2) - 30px);
     }
 }
@@ -82,7 +86,8 @@
     align-items: center;
 
     @media screen and (max-width: 768px) {
-        width: 450px;
+        //width: 100vw;
+        max-width: 100%;
     }
     
 }

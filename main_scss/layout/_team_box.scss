@@ -8,6 +8,11 @@
     background: var(--background_second);
 }
 
+.team-container {
+    justify-content: center;
+    display: inline;
+}
+
 .team__title {
     font-weight: 700;
     font-size: 36px;
@@ -16,6 +21,12 @@
     letter-spacing: 0.03em;
 
     color: var(--title_text); 
+
+    @media screen and (min-width: 480px) {
+        font-size: 28px;
+        line-height: 1.17;
+        width: 205px;
+    }
 }
 
 .team__info {
