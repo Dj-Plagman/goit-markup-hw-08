@@ -28,6 +28,8 @@
 
 .social_link {
     display: flex;
+    
+    
 }
 
 .social_link:not(:last-child){
@@ -36,4 +38,10 @@
 
 .social_list {
     margin-top: 16px;
+    @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
