@@ -454,10 +454,6 @@ img {
   }
 }
 
-.container-hero {
-  width: 1200px;
-}
-
 .hero {
   display: flex;
   align-items: center;
@@ -588,7 +584,6 @@ img {
 @media screen and (max-width: 768px) {
   .feature__box:not(:last-child) {
     margin-bottom: 30px;
-    margin-right: 0;
   }
 }
 
@@ -607,7 +602,7 @@ img {
 
 @media screen and (max-width: 768px) {
   .feature__box {
-    max-width: 450px;
+    width: 100vw;
   }
 }
 
@@ -643,6 +638,12 @@ img {
   color: var(--text_basic);
 }
 
+@media screen and (max-width: 768px) {
+  .feature__text {
+    width: 480px;
+  }
+}
+
 .feature__icon {
   width: 70px;
   height: 70px;
@@ -662,7 +663,8 @@ img {
 
 @media screen and (max-width: 768px) {
   .feature__icon-box {
-    max-width: 100%;
+    width: 100vw;
+    max-width: 480px;
   }
 }
 

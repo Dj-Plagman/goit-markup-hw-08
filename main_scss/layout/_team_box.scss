@@ -11,6 +11,7 @@
 .team-container {
     justify-content: center;
     display: inline;
+    
 }
 
 .team__title {
@@ -46,6 +47,7 @@
     &:not(:last-child) {
         margin-right: 30px;
     }
+    
 }
 
 
