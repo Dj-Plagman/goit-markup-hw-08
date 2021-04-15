@@ -645,7 +645,8 @@ img {
 
 @media screen and (max-width: 768px) {
   .feature__text {
-    width: 480px;
+    width: 100%;
+    max-width: 480px;
   }
 }
 
@@ -668,7 +669,7 @@ img {
 
 @media screen and (max-width: 768px) {
   .feature__icon-box {
-    width: 100vw;
+    width: 100%;
     max-width: 480px;
   }
 }
@@ -789,7 +790,8 @@ img {
 
 @media screen and (min-width: 240px) and (max-width: 768px) {
   .team__card {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     margin-top: 30px;
   }
 }
