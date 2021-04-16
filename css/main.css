@@ -581,12 +581,6 @@ img {
   margin-right: 30px;
 }
 
-@media screen and (max-width: 768px) {
-  .feature__box:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .feature__list {
     margin-left: -30px;
@@ -604,6 +598,7 @@ img {
 @media screen and (min-width: 240px) and (max-width: 768px) {
   .feature__box {
     width: 100%;
+    margin-bottom: 30px;
   }
 }
 
@@ -611,7 +606,7 @@ img {
   .feature__box {
     margin-top: 30px;
     margin-left: 30px;
-    flex-basis: calc((100% / 30px) - 2);
+    flex-basis: calc((100% / 2) - 30px);
   }
   .feature__box:nth-last-child(n + 2) {
     margin-right: 0px;
@@ -800,7 +795,7 @@ img {
   .team__card {
     margin-top: 30px;
     margin-left: 30px;
-    flex-basis: calc((100% / 30px) - 2);
+    flex-basis: calc((100% / 2) - 30px);
   }
   .team__card:nth-last-child(n + 2) {
     margin-right: 0px;
@@ -808,6 +803,13 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .page_team {
+    width: 100%;
+    height: 460px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .page_team {
     width: 100%;
     height: 460px;
@@ -879,6 +881,14 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .social_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -893,8 +903,26 @@ img {
   color: var(--title_text);
 }
 
+@media screen and (max-width: 1200px) {
+  .clients__title {
+    font-size: 28px;
+    line-height: 1.17;
+    margin-bottom: 30px;
+  }
+}
+
 .clients__list {
   margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px) {
+  .clients__list {
+    margin-top: -30px;
+    margin-left: -30px;
+  }
 }
 
 .clients__box {
@@ -918,8 +946,38 @@ img {
   cursor: pointer;
 }
 
+@media screen and (min-width: 240px) and (max-width: 768px) {
+  .clients__box {
+    width: 210px;
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% / 2) - 30px);
+  }
+  .clients__box:nth-last-child(n + 2) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .clients__box {
+    width: 226px;
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% / 3) - 30px);
+  }
+  .clients__box:nth-last-child(n + 2) {
+    margin-right: 0px;
+  }
+}
+
 .clients__box:not(:last-child) {
   margin-right: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .clients__box:not(:last-child) {
+    margin-right: 0;
+  }
 }
 
 .client__icon-1 {

@@ -14,10 +14,6 @@
 
 .feature__box:not(:last-child) {
     margin-right: 30px;
-    
-    @media screen and (max-width: 768px) {
-        margin-bottom: 30px;
-    }
 }
 
 
@@ -36,12 +32,13 @@
     
     @media screen and (min-width: 240px) and (max-width: 768px) {
         width: 100%;
+        margin-bottom: 30px;
        
     }
     @media screen and (min-width: 768px) and (max-width: 1200px) {
         margin-top: 30px;
         margin-left: 30px;
-        flex-basis: calc((100% / 30px) - 2);
+        flex-basis: calc((100% / 2) - 30px);
         &:nth-last-child( n + 2) {
             margin-right: 0px;
         }
