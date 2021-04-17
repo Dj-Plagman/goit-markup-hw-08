@@ -7,13 +7,31 @@
     margin-bottom: 20px;
 
     color: #FFFFFF;
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
 }
 
 .container_social {
     width: 206px;
     height: 80px;
+    
+    @media screen and (max-width: 768px) {
+        width: auto;
+        margin-top: 30px;
+    }
+ 
 }
 
+@media screen and (max-width: 768px) {
+    .join__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
 
 .join_box:not(:last-child) {
     margin-right: 10px;

@@ -198,6 +198,12 @@ img {
   color: var(--accent_color);
 }
 
+@media screen and (max-width: 768px) {
+  .contakt_mail, .contakt_mail .contact_footer {
+    display: inline;
+  }
+}
+
 .contakt_tel {
   padding-top: 7px;
   padding-bottom: 7px;
@@ -216,6 +222,12 @@ img {
 
 .contakt_tel:hover, .contakt_tel:focus {
   color: var(--accent_color);
+}
+
+@media screen and (max-width: 768px) {
+  .contakt_tel, .contakt_tel .contact_footer {
+    display: inline;
+  }
 }
 
 .telephone {
@@ -812,7 +824,7 @@ img {
 @media screen and (min-width: 768px) {
   .page_team {
     width: 100%;
-    height: 460px;
+    height: 374px;
   }
 }
 
@@ -1018,10 +1030,25 @@ img {
 
 .div_footer {
   display: flex;
+  outline: 2px solid red;
+}
+
+@media screen and (max-width: 780px) {
+  .div_footer {
+    display: inline;
+  }
 }
 
 .container_footer {
   margin-right: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  .container_footer {
+    text-align: center;
+    justify-content: center;
+    margin-right: 0;
+  }
 }
 
 .footer {
@@ -1069,9 +1096,31 @@ img {
   color: #FFFFFF;
 }
 
+@media screen and (max-width: 768px) {
+  .join_text {
+    text-align: center;
+  }
+}
+
 .container_social {
   width: 206px;
   height: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .container_social {
+    width: auto;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .join__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
 }
 
 .join_box:not(:last-child) {
@@ -1103,6 +1152,14 @@ img {
 
 .form_field_footer {
   margin-left: 93px;
+  outline: 2px solid red;
+}
+
+@media screen and (max-width: 768px) {
+  .form_field_footer {
+    margin-top: 60px;
+    margin-left: 0;
+  }
 }
 
 .send_text {
@@ -1117,9 +1174,22 @@ img {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .send_text {
+    text-align: center;
+  }
+}
+
 .form_input_wrapper {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .form_input_wrapper {
+    display: inline;
+    text-align: center;
+  }
 }
 
 .footer_form_input {

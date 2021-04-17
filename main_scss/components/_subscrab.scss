@@ -1,5 +1,11 @@
 .form_field_footer {
     margin-left: 93px;
+    outline: 2px solid red;
+
+    @media screen and (max-width: 768px) {
+        margin-top: 60px;
+        margin-left: 0;
+     }
 }
 
 .send_text {
@@ -12,11 +18,23 @@
     text-transform: uppercase;
     color: var(--first_color);
     margin-bottom: 20px;
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+     }
 }
 
 .form_input_wrapper {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+       display: inline;
+    //   justify-items: center;
+    //   align-items: center;
+       
+       text-align: center;
+     }
 }
 
 .footer_form_input {

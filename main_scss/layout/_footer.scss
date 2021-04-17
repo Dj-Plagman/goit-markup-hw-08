@@ -1,17 +1,29 @@
 .div_footer {
     display: flex;
+    outline: 2px solid red;
+
+    @media screen and (max-width: 780px) {
+        display: inline;
+    }
+ 
 
 }
 
 .container_footer {
     margin-right: 70px;
 
+    @media screen and (max-width: 768px) {
+        text-align: center;
+        justify-content: center;
+        margin-right: 0;
+    }
 }
 
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--background_first);
+    
 }
 
 .container_footer .logo {
@@ -42,3 +54,4 @@
 .footer_color {
     color: var(--footer_color);
 }
+

@@ -28,6 +28,12 @@
     &:focus {
      color: var(--accent_color);
     }
+
+    @media screen and (max-width: 768px) {
+       &, .contact_footer {
+           display: inline;
+       } 
+    }
 }
 
  
@@ -51,6 +57,12 @@
     &:focus {
     color: var(--accent_color);
     }
+
+    @media screen and (max-width: 768px) {
+        &, .contact_footer {
+            display: inline;
+        } 
+     }
 }
  
 .telephone {
