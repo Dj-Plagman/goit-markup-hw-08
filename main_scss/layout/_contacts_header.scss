@@ -78,6 +78,11 @@
     @media screen and (max-width: 768px) {
         display: inline;
     }
+    .zakladka_list {
+        @media screen and (max-width: 768px) {
+            display: flex;
+        }
+    }
 }
 
  
