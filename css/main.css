@@ -253,7 +253,7 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-  .list .zakladka_list {
+  .list, .list .zakladka_list {
     display: flex;
   }
 }
@@ -1216,6 +1216,8 @@ img {
 @media screen and (max-width: 1200px) {
   .form_input_wrapper {
     flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -1246,7 +1248,6 @@ img {
 @media screen and (max-width: 768px) {
   .footer_form_input {
     width: 100%;
-    max-width: 450px;
   }
 }
 
