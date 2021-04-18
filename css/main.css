@@ -246,12 +246,6 @@ img {
   margin-left: auto;
 }
 
-@media screen and (max-width: 768px) {
-  .list {
-    display: inline;
-  }
-}
-
 .icon_mail {
   width: 16px;
   height: 14px;
@@ -603,6 +597,12 @@ img {
   margin-right: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .feature__list {
+    display: inline;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .feature__list {
     margin-left: -30px;
@@ -753,6 +753,12 @@ img {
 
 .team__list {
   margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .team__list {
+    display: inline;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
