@@ -378,6 +378,9 @@ img {
     height: 18px;
     fill: var(--second_color);
   }
+  .mobile__close:hover {
+    fill: var(--accent_color);
+  }
   .mobile-menu {
     display: flex;
     flex-direction: column;
@@ -386,7 +389,7 @@ img {
     top: 0;
     left: 50%;
     width: 100vw;
-    max-width: 480px;
+    max-width: 100%;
     height: 100%;
     padding-left: 40px;
     padding-top: 48px;
@@ -398,6 +401,9 @@ img {
   }
   .is-open {
     transform: translateY(0) translateX(-50%);
+  }
+  .mobile-menu__list .link.current {
+    color: var(--accent_color);
   }
   .mobile-menu__link {
     font-family: Roboto;
@@ -479,7 +485,7 @@ img {
 
 .overley {
   width: 100vw;
-  max-width: 100%;
+  max-width: 1600px;
   background-color: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop/hero/hero-img@1x.jpg);
   background-size: cover;
@@ -538,20 +544,6 @@ img {
   background: var(--button_accent);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .overley {
-    width: 100vw;
-    max-width: 100%;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet/hero/hero-img@1x.jpg);
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 2dppx) {
-  .overley {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet/hero/hero-img@2x.jpg);
-  }
-}
-
 @media screen and (max-width: 768px) {
   .container-hero {
     width: 480px;
@@ -573,6 +565,20 @@ img {
 @media screen and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 192dpi), screen and (max-width: 768px) and (min-resolution: 2dppx) {
   .overley {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mobile/hero/hero-img@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .overley {
+    width: 100vw;
+    max-width: 100%;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet/hero/hero-img@1x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 2dppx) {
+  .overley {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet/hero/hero-img@2x.jpg);
   }
 }
 
@@ -1108,6 +1114,13 @@ img {
 
 .footer_color {
   color: var(--footer_color);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contakt_mail-footer, .contakt_tel-footer {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .join_text {

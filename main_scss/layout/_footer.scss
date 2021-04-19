@@ -58,3 +58,9 @@
     color: var(--footer_color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .contakt_mail-footer, .contakt_tel-footer  {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+}
